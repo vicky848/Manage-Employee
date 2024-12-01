@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>manage-employees</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+      <header class="header-container">
+<div class="logo"></div>
+
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search Employee ...">
+
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <nav class="navbar-menu">
+            <ul>
+                <li><a href="register.html">Employee Registration </a></li>
+                <li><a href="list.html">Employee Listing</a></li>
+            </ul>
+            
+            
+             
+
+        </nav>
+        
+      </header>
+
+
+     <main class="main-container">
+     <h1 class="register-heading">Register Employee</h1>
+     <form action="" id="employeeForm" class="form-container">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" class="input name" required/> <br>
+        <label for="position">Position</label><br>
+        <input type="text" id="position"  class="input position" required /><br>
+        <label for="about">About</label><br>
+        <textarea  id="about" class="input about" required></textarea><br>
+        <label for="joining_date">Joining Date</label><br>
+        <input type="text"  id="joining_date"required class="input Joining" /> <br>
+
+        <button type="submit" class="button">Submit</button>
+     </form>
+
+
+
+     </main>
+
+
+
+      <footer class="footer-container">
+
+   
+
+
+    <p class="footer-text"> ©   Vicky Kumar Chowrasia </p>
+    
+    <div class="footer-card">
+        <h1 class="social-heading">Social Media</h1>
+        <div class="social-container">
+           <div class="image-container"> <a href="#"><img src="facebook.png" alt="facebook" class="social-image"></a></div>
+            <div class="image-container"><a href="#"><img src="twitter.png"  alt="twitter" class="social-image"></a></div>
+            <div class="image-container"><a href="#"><img src="instagram.png" alt="instagram" class="social-image"></a></div>
+           <div class="image-container"> <a href="#"><img src="linkedin.png" alt="linkedin" class="social-image"></a></div>
+            
+       </div>
+        </div>
+    
+
+
+
+
+      </footer>
+        
+        <script src="index.js" ></script>
+    </body>
+</html>

@@ -1,0 +1,480 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.header-container{
+   display: flex;
+  align-items: center;
+ justify-content: space-between;
+ padding: 10px 20px;
+ background-color: black;
+ border-bottom: 1px  solid #ddd;
+ height: 60px;
+
+
+   
+}
+
+#search{
+    height: 25px;
+    width: 230px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+    border-width: 0px;
+    margin-left: auto;
+}
+
+.logo{
+    background-size: cover;
+    background-image: url("my-app.png");
+    height: 100px;
+    width: 100px;
+   background-position: center;
+  
+}
+/* Default Navbar Styling */
+
+.navbar-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 30px;
+}
+
+.navbar-menu li {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.navbar-menu li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    
+}
+.navbar-menu.active {
+    display: flex; /* Show menu when active */
+}
+
+/* Responsive Navbar */
+@media only screen and (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Hide the menu by default */
+        position: absolute;
+        top: 60px; /* Below the header */
+        right: 0;
+        background-color: black;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .navbar-menu ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbar-menu li {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #555;
+    }
+
+   /* Show the hamburger button */ 
+    .hamburger {
+        display: block;
+        color: #ffffff;
+        margin-left:20px;
+    }
+   .logo{
+    margin-right: auto;
+   }
+
+}
+
+/* Show the menu when active */
+.navbar-menu.active {
+    display: flex; /* Show the menu */
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+.main-container{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.input{
+    height: 30px;
+    width: 250px;
+    text-align: center;
+    
+}
+
+label{
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.register-heading{
+    font-size: 34px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.name{
+    margin-top: 10px;
+}
+.position{
+    margin-top: 10px;
+}
+.about{
+    margin-top: 1x;
+}
+.joining{
+    margin-top: 10px;
+}
+
+
+.form-container{
+    flex-wrap: wrap;
+}
+.button{
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    height: 32px;
+    width: 132px;
+    border-radius: 4px;
+    border-width: 0px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.footer-container{
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-text{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-top: 40px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.social-heading{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    
+   margin-left: 50px;
+    margin-top: 60px;
+
+}
+.social-image{
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+   
+}
+.image-container{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    text-align: center;
+    
+    border-radius: 100px;
+    
+}
+
+
+.social-container{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+.footer-card{
+    margin-bottom: 60px;
+}
+/* General Table Styles */
+#employeeTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #employeeTable thead {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  #employeeTable th,
+  #employeeTable td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  #employeeTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #employeeTable tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  #employeeTable th {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Pagination Controls */
+  #pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #pagination button {
+    margin: 0 5px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #030303;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  
+  #pagination span {
+    font-size: 16px;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+
+
+
+
+
+
+.employee-list-heading{
+    text-align: center;
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+}
+.table-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+}
+
+#pagination{
+    margin-top: 40px;
+};
+
+#pageNumber{
+    text-align: center;
+    font-family: sans-serif;
+    margin-left: 10px;
+    margin-top: 20px;
+   
+}
+
+/* Responsive Table Styles */ 
+  
+  @media screen and (max-width: 768px) {
+    #employeeTable {
+       
+      width: 100%;
+    }
+    
+    #employeeTable th,
+    #employeeTable td {
+        display: block;
+        text-align: left;
+    } 
+    
+    #employeeTable th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        width: 100%;
+        background-color: #007BFF;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      
+      #employeeTable td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+      }
+
+        #employeeTable td:before {
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-weight: bold;
+        content: attr(data-label);
+      }
+      
+      #employeeTable td:nth-of-type(1):before { content: "Employee ID"; }
+      #employeeTable td:nth-of-type(2):before { content: "Name"; }
+      #employeeTable td:nth-of-type(3):before { content: "Position"; }
+      #employeeTable td:nth-of-type(4):before { content: "About"; }
+      #employeeTable td:nth-of-type(5):before { content: "Joining Date"; }
+  } 
+  
+  /* Sorting Table Styles */
+  
+  #employeeTable th.sort-asc::after { content: "��"; }
+  #employeeTable th.sort-desc::after { content: "��"; }
+  
+ 
+
+    /* Responsive footer style */
+    @media screen and (max-width: 768px) {
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        margin-top: 30px;
+        height: 600px;
+
+    }
+    .footer-text{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .social-container{
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+    .footer-card{
+        margin-bottom: 20px;
+    }
+    }
+    
+    /* Media queries for different screen sizes */
+    
+    @media screen and (min-width: 1200px) {
+    .employee-list-heading{
+        font-size: 32px;
+    }
+    }
+    
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .employee-list-heading{
+        font-size: 28px;
+    }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+    .employee-list-heading{
+        font-size: 24px;
+    }
+    }
+    
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+    .employee-list-heading{
+        font-size: 20px;
+    }
+    }
+    
+    @media screen and (max-width: 575px) {
+        .employee-list-heading{
+        font-size: 16px;
+
+    }
+}
+
+
+.button-delete{
+    margin-left: 10px;
+    background-color: #FF0000;
+    height: 27px;
+    width: 80px;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    border: none;
+    outline: none;
+    
+
+}
+/* responsive */
+    @media screen and (max-width: 768px) {
+       .button-delete{
+            margin-left: 0;
+            width:60px;
+        }
+    }
+
